@@ -131,7 +131,7 @@
     "unicorn/filename-case": "off",
     "unicorn/prevent-abbreviations": [
       "warn",
-      { "replacements": { "props": false, "ref": false } }
+      { "replacements": { "props": false, "ref": false, "dev": false } }
     ]
   }
 }
