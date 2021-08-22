@@ -1,4 +1,7 @@
 # Ignore artifacts:
+.snowpack
 build
 dist
+node_modules
+.DS_Store
 coverage
