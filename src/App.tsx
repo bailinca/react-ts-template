@@ -10,7 +10,7 @@ function App(): JSX.Element {
     return () => clearTimeout(timer);
   }, [count, setCount]);
 
-  return ( 
+  return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

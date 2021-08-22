@@ -3,7 +3,11 @@
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -32,6 +36,8 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-unicorn": "^35.0.0",
     "eslint-watch": "^7.0.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
     "prettier": "2.3.2",
     "snowpack": "^3.8.6",
     "typescript": "^4.3.5"
