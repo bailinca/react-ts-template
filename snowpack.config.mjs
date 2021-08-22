@@ -10,8 +10,14 @@ export default {
     [
       "@snowpack/plugin-run-script",
       {
-        cmd: "eslint src --ext .js,.jsx,.ts,.tsx",
-        watch: "esw -w --clear src --ext .js,.jsx,.ts,.tsx",
+        cmd: "eslint .",
+        watch: "esw -w --clear .",
+      },
+    ],
+    [
+      "@snowpack/plugin-run-script",
+      {
+        cmd: "prettier --check .",
       },
     ],
   ],
