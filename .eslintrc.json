@@ -9,7 +9,9 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:unicorn/recommended"
+    "plugin:unicorn/recommended",
+    // keep prettier last, so it gets the chance to override other configs
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -67,14 +69,12 @@
       "warn",
       { "args": "after-used", "ignoreRestSiblings": true }
     ],
-    "no-trailing-spaces": "warn",
     "no-debugger": "warn",
     "arrow-body-style": "warn",
     "max-len": "off",
     "class-methods-use-this": "off",
     "no-bitwise": "off",
     "camelcase": "off",
-    "semi": ["warn", "always"],
 
     // import:
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
@@ -106,7 +106,6 @@
     "react/require-default-props": "off",
     "react/jsx-boolean-value": "warn",
     "react/no-unused-prop-types": "warn",
-    "react/jsx-closing-bracket-location": "warn",
     "react/destructuring-assignment": "warn",
     "react/jsx-props-no-spreading": "off",
     "react/state-in-constructor": "off",
