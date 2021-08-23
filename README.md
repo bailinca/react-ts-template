@@ -18,4 +18,4 @@ Your app is ready to be deployed!
 ### npm test
 
 Launches the application test runner.
-Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
+Run `npm test:watch` to run in interactive watch mode.
