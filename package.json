@@ -1,8 +1,9 @@
 {
   "scripts": {
     "start": "snowpack dev",
-    "build": "eslint . && snowpack build",
+    "build": "eslint . && snowpack build && npm test",
     "test": "web-test-runner \"src/**/*.test.{jsx,js,ts,tsx}\"",
+    "test:watch": "npm test -- --watch",
     "format": "prettier --write .",
     "prepare": "husky install"
   },

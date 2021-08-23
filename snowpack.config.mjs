@@ -20,13 +20,6 @@ export default {
         cmd: "prettier --check .",
       },
     ],
-    [
-      "@snowpack/plugin-run-script",
-      {
-        cmd: "npm test",
-        watch: "npm test --watch",
-      },
-    ],
   ],
   buildOptions: {
     jsxInject: "import React from 'react'",
