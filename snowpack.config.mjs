@@ -39,7 +39,7 @@ export default {
     // source: 'remote',
   },
   devOptions: {
-    // port: 8080
+    port: process.env.NODE_ENV === "test" ? 8081 : 8080,
   },
   alias: {
     // Type 1: Package Import Alias
