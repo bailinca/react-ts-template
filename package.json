@@ -2,7 +2,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "eslint . && snowpack build",
-    "test": "web-test-runner \"src/**/*.test.tsx\"",
+    "test": "web-test-runner \"src/**/*.test.{jsx,js,ts,tsx}\"",
     "format": "prettier --write .",
     "prepare": "husky install"
   },
