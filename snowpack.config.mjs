@@ -34,12 +34,12 @@ export default {
     treeshake: true,
     splitting: true,
   },
+  devOptions: {
+    port: process.env.NODE_ENV === "test" ? 8081 : 8080,
+  },
   packageOptions: {
     // To import packages from skypack CDN (https://pkg.snowpack.dev):
     // source: 'remote',
-  },
-  devOptions: {
-    port: process.env.NODE_ENV === "test" ? 8081 : 8080,
   },
   alias: {
     // Type 1: Package Import Alias
