@@ -4,6 +4,7 @@
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",
+    // esbuild compiles the jsx, so we tell tsc to emit files with unchanged jsx:
     "jsx": "preserve",
     "baseUrl": "./",
     "paths": {
