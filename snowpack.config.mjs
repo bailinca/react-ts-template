@@ -46,6 +46,7 @@ export default {
     // react: 'preact/compat',
     // Type 2: Local Directory Import Alias (relative to cwd)
     // components: './src/components',
+    src: "./src",
   },
   env: {
     // ENABLE_FEATURE: false,

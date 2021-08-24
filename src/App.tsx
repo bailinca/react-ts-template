@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logo from "./assets/logo.svg";
+import logo from "src/assets/logo.svg";
 import "./App.css";
 
 function App(): JSX.Element {
