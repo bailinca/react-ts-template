@@ -49,6 +49,7 @@ export default {
     src: "./src",
   },
   env: {
+    API_MOCKING: false,
     // ENABLE_FEATURE: false,
   },
 };
