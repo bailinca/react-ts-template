@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import logo from "src/assets/logo.svg";
 import "./App.css";
+import "./common/theme.css";
 
-function App(): JSX.Element {
+function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
