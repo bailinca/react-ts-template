@@ -40,6 +40,9 @@
   },
 
   "rules": {
+    // typescript:
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+
     // general:
     "object-shorthand": "warn",
     "prefer-destructuring": [
