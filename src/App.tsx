@@ -1,7 +1,23 @@
 import { useState, useEffect } from "react";
 import logo from "src/assets/logo.svg";
+import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import "./common/theme.css";
+
+function Home() {
+  return (
+    <div>
+      <h1>Home</h1>
+      <nav>
+        <NavLink to="/">Home</NavLink> | <NavLink to="about">About</NavLink>
+      </nav>
+    </div>
+  );
+}
+
+function About() {
+  return <h1>About</h1>;
+}
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +30,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        {/* Or use https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#useroutes */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
