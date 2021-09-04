@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import logo from "src/assets/logo.svg";
+import { Counter } from "src/features/counter/Counter";
 import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import "./common/theme.css";
@@ -37,6 +38,8 @@ function App() {
         </Routes>
 
         <img src={logo} className="App-logo" alt="logo" />
+        <Counter />
+
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
