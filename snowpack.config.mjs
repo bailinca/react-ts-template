@@ -30,8 +30,9 @@ export default {
   },
   packageOptions: {
     knownEntrypoints: ["react-is"],
+    polyfillNode: process.env.NODE_ENV === "test" ? true : false,
   },
   env: {
-    API_MOCKING: false,
+    API_MOCKING: true,
   },
 };
