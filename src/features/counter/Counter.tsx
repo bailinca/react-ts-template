@@ -9,7 +9,6 @@ export function Counter() {
   const { count } = useSnapshot(counterState);
   const { amount, error, loading } = useAmount();
 
-  if (error) return <div>failed to load</div>;
   if (loading) return <div>loading...</div>;
 
   return (
@@ -29,6 +28,8 @@ export function Counter() {
           Add {amount}
         </Button>
       </Row>
+
+      {error ? <p>{error.message}</p> : undefined}
     </div>
   );
 }
