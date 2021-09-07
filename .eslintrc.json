@@ -105,11 +105,8 @@
     ],
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-wrap-multilines": "off",
-    "react/prop-types": "warn",
-    "react/forbid-prop-types": ["warn", { "forbid": ["any"] }],
     "react/require-default-props": "off",
     "react/jsx-boolean-value": "warn",
-    "react/no-unused-prop-types": "warn",
     "react/destructuring-assignment": "warn",
     "react/jsx-props-no-spreading": "off",
     "react/state-in-constructor": "off",
@@ -141,7 +138,8 @@
           "ref": false,
           "dev": false,
           "db": false,
-          "args": false
+          "args": false,
+          "env": false
         }
       }
     ],
