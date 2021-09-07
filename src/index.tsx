@@ -7,6 +7,11 @@ import swrConfig from "./config/swrConfig";
 import App from "./App";
 import "./index.css";
 
+if (import.meta.env.API_MOCKING) {
+  const { worker } = await import("./mocks/browser");
+  await worker.start({ onUnhandledRequest: "bypass" });
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <SWRConfig value={swrConfig}>
