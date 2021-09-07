@@ -9,7 +9,7 @@ import "./index.css";
 
 if (import.meta.env.API_MOCKING) {
   const { worker } = await import("./mocks/browser");
-  await worker.start({ onUnhandledRequest: "bypass" });
+  await worker.start();
 }
 
 ReactDOM.render(
