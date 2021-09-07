@@ -1,18 +1,23 @@
 import { useSnapshot } from "valtio";
-import useSWR from "swr";
 
 import counterState from "./counterState";
-import { fetchCount } from "./counterAPI";
+import { useAmount } from ".";
 
 import { Button, Row, Value } from "./styled";
 
+// A mock function to mimic making an async request for data
+export function fetchCount(): Promise<{ amount: number }> {
+  return new Promise((resolve) =>
+    setTimeout(() => resolve({ amount: 3 }), 500)
+  );
+}
+
 export function Counter() {
   const { count } = useSnapshot(counterState);
-
-  const { data, error } = useSWR("/api/count", fetchCount);
+  const { amount, error, loading } = useAmount(fetchCount);
 
   if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
+  if (loading) return <div>loading...</div>;
 
   return (
     <div>
@@ -27,8 +32,8 @@ export function Counter() {
           +
         </Button>
 
-        <Button onClick={() => counterState.incrementByAmount(data.amount)}>
-          Add {data.amount}
+        <Button onClick={() => counterState.incrementByAmount(amount)}>
+          Add {amount}
         </Button>
       </Row>
     </div>
