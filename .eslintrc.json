@@ -140,7 +140,8 @@
           "props": false,
           "ref": false,
           "dev": false,
-          "db": false
+          "db": false,
+          "args": false
         }
       }
     ],
