@@ -47,11 +47,3 @@ export const Button = styled.button`
     background-color: rgba(112, 76, 182, 0.2);
   }
 `;
-
-export const Textbox = styled.input`
-  font-size: 32px;
-  padding: 2px;
-  width: 64px;
-  text-align: center;
-  margin-right: 4px;
-`;
