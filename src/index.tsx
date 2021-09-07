@@ -1,14 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
+import { SWRConfig } from "swr";
+
+import swrConfig from "./config/swrConfig";
 import App from "./App";
 import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <SWRConfig value={swrConfig}>
+      <Router>
+        <App />
+      </Router>
+    </SWRConfig>
   </React.StrictMode>,
   document.querySelector("#root")
 );
