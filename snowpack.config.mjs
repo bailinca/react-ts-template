@@ -28,6 +28,9 @@ export default {
     // components: './src/components',
     src: "./src",
   },
+  packageOptions: {
+    knownEntrypoints: ["react-is"],
+  },
   env: {
     API_MOCKING: false,
   },

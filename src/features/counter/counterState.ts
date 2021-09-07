@@ -1,5 +1,4 @@
 import { proxy } from "valtio";
-import { devtools } from "valtio/utils";
 
 const state = proxy({
   count: 0,
@@ -15,5 +14,3 @@ const state = proxy({
 });
 
 export default state;
-
-devtools(state, "counterState");
