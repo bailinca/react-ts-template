@@ -5,7 +5,7 @@ export function useAmount() {
 
   return {
     amount: data?.amount ?? 1,
-    loading: isValidating,
+    loading: !error && !data && isValidating,
     error,
   };
 }
