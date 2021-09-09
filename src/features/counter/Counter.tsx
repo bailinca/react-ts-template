@@ -1,7 +1,7 @@
 import { useSnapshot } from "valtio";
 
 import counterState from "./counterState";
-import { useAmount } from "./counterHooks";
+import { useAmount } from "./counterAPI";
 
 import { Button, Row, Value } from "./styled";
 
