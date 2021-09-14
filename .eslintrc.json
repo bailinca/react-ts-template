@@ -33,7 +33,8 @@
     "import",
     "jsx-a11y",
     "unicorn",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "@emotion"
   ],
   "globals": {
     "module": "readonly",
